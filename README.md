@@ -41,6 +41,16 @@ The project evaluates two classification algorithms:
 
 Both models use class weighting to help address the imbalance between subscription and non-subscription outcomes.
 
+## Model Evaluation
+
+The models were evaluated using:
+
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- ROC-AUC
+
 ## Model Results
 
 The following results are taken from the notebook's recorded test-set outputs.
@@ -68,10 +78,26 @@ These results illustrate the trade-off between identifying potential subscribers
 
 ## How to Run the Project
 
-Open Jupyter notebook and select the file then run one cell at a time.
-
 ### 1. Clone the repository
 
-```bash
 git clone https://github.com/KamranAzmat126/Term-Deposit-Prediction.git
 cd Term-Deposit-Prediction
+
+### Step 2: Install dependencies
+
+pip install pandas matplotlib scikit-learn jupyter
+
+### Step 3: Download the dataset
+
+Download the CSV dataset from Kaggle using the link above.
+
+### Step 4: Update the dataset path
+
+The notebook currently contains a local Windows file path. Replace the existing dataset path in the notebook with the relative path.
+
+### Step 5: Launch Jupyter Notebook
+
+jupyter notebook
+
+Open `Term_Deposit_Prediction.ipynb` and run the notebook cells.
+
